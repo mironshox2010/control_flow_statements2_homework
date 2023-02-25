@@ -8,4 +8,19 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    dgf = a
+    if a < b:
+        if a > c:
+            dgf = a
+    if a > b:
+        if b > c:
+            dgf = b
+    if a > c:
+        if b < c:
+            dgf = c
+
+    return dgf
+
+print(main(1,4,2))
+
+    
