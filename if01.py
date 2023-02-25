@@ -8,4 +8,16 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    dgf = a
+    if a > b:
+        if a > c:
+            dgf = a
+        else:
+            dgf = c
+    else:
+        if b > c:
+            dgf = b
+        else:
+            dgf = c
+    return dgf
+print(main(-5,-3,-1))
